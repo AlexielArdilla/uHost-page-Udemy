@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.main-header {
+    background: rgb(32, 153, 32);
+    padding: 10px 16px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+.main-header__brand img {
+    height: 22px;
+}
+
+.background {
+    background: url("../images/plans-background.jpg");
+    width: 1800px;
+    height: 1200px;
+    z-index: -1;
+    position: fixed;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 88px);
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+
+/*.main-nav__item a::after {
+    content: " (link)";
+    color: red;
+}*/
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: blanchedalmond;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: tomato;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: red;
+    background: whitesmoke;
+    border: none;
+}
+
+.main-footer {
+    background: black;
+    color: white;
+    padding: 30px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: lightgrey;
+}
+
+.button {
+    background: rgb(1, 56, 1);
+    color: rgb(206, 206, 206);
+    font: inherit;
+    border: solid 1.5px darkgreen;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+button:active {
+    background: whitesmoke;
+    color: rgb(1, 56, 1);
+}
+
+.button:focus {
+    outline: none;
+}
+
+main {
+    padding-top: 60px;
+}
+
+section {
+    margin: 15px;
+    padding: 15px;
+    border: darkgreen;
+    background: lightgreen;
+    color: white;
+    border: black solid 3px;
+}
+
+section:hover,
+section:active {
+    border: red solid 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: grey;
+}
+
+p {
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    border: black solid 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-two {
+    background: rgb(180, 238, 180);
+}
+
+.section-three {
+    background: darkgreen;
+}
+
+.section-three h1 {
+    color: white;
+}
+
+.package__badge {
+    position: absolute;
+    margin: 20px;
+    top: 70px;
+    right: 40px;
+    color: black;
+    font-size: 12px;
+    color: white;
+    background: tomato;
+    padding: 8px;
+    border-radius: 5px;
+    border: black solid 3px;
+}
